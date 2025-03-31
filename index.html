@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Biliran</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               Cyane
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link ">About</a>
+                  </li>
+                  
+                  <li class="nav__item">
+                     <a href="#popular" class="nav__link ">Documentation</a>
+                  </li>
+                  
+                  <li class="nav__item">
+                     <a href="#explore" class="nav__link ">Explore</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="assets/img/home-bg.jpg" alt="home image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h3 class="home__subtitle">
+                     The Beauty of Biliran
+                  </h3>
+
+                  <h1 class="home__title">
+                     Explore <br>
+                     The Island <br>
+                     of Paradise
+                  </h1>
+
+                  <p class="home__description">
+                     Discover the wonders of Biliran.<br>
+                     "A hidden paradise of waterfalls, hotsprings and cultural gems."
+                  </p>
+
+                  <a href="#" class="button">
+                     Start Your Journey <i class="ri-arrow-right-line"></i>
+                  </a>
+               </div>
+
+               <div class="home__cards grid">
+                  <article class="home__card">
+                     <img src="assets/img/dalutan.jpg" alt="home image" class="home__card-img">
+                     <h3 class="home__card-title">Dalutan Island</h3>
+                     <div class="home__card-shadow"></div>
+                  </article>
+
+                  <article class="home__card">
+                     <img src="assets/img/ulanulan.jpg" alt="home image" class="home__card-img">
+                     <h3 class="home__card-title">Ulan-Ulan Falls</h3>
+                     <div class="home__card-shadow"></div>
+                  </article>
+
+                  <article class="home__card">
+                     <img src="assets/img/Tomalistis.jpg" alt="home image" class="home__card-img">
+                     <h3 class="home__card-title">Tomalistis Falls</h3>
+                     <div class="home__card-shadow"></div>
+                  </article>
+
+                  <article class="home__card">
+                     <img src="assets/img/asemco.jpg" alt="home image" class="home__card-img">
+                     <h3 class="home__card-title">ASEMCO Resort</h3>
+                     <div class="home__card-shadow"></div>
+                  </article>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h2 class="section__title">
+                     The Beauty of <br> 
+                     Biliran
+                  </h2>
+
+                  <p class="about__description">
+                     Discover the natural wonders of Biliran. 
+                     A hidden paradise of waterfalls, hot springs, 
+                     and cultural gems. Experience the serene beaches, 
+                     breathtaking falls, and mesmerizing landscapes that 
+                     make Biliran a must-visit destination.
+                  </p>
+
+                  <a href="#" class="button">
+                     Explore Biliran  <i class="ri-arrow-right-line"></i>
+                  </a>
+               </div>
+
+               <div class="about__image">
+                  <img src="assets/img/INFOGRAPHICS.png" alt="" class="about__img">
+                  <div class="about__shadow"></div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== DOCUMENTATION ====================-->
+         <section class="popular section" id="popular">
+            <h2 class="section__title">
+               Discover The Beauty <br> 
+               Of Biliran
+            </h2>
+
+            <div class="video__container" onclick="openModal()">
+               <div class="video__thumbnail">
+                   <img src="assets/img/thumbnails.jpg" alt="Biliran Video" class="video__img">
+                   <div class="play-button">
+                       <i class="ri-play-circle-fill"></i>
+                   </div>
+               </div>
+           </div>
+       
+           <!-- Modal -->
+           <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <iframe id="videoFrame" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+         </section>
+         
+         <!--==================== EXPLORE ====================-->
+         <section class="explore section" id="explore">
+            <div class="explore__container">
+               <div class="explore__image">
+                  <img src="assets/img/explore-beach.jpg" alt="explore image" class="explore__img">
+                  <div class="explore__shadow"></div>
+               </div>
+
+               <div class="explore__content container grid">
+                  <div class="explore__data">
+                     <h2 class="section__title">
+                        Explore The <br> 
+                        Best Paradises
+                     </h2>
+
+                     <p class="explore__description">
+                        Exploring paradises such as islands and 
+                        valleys when traveling the world is one of 
+                        the greatest experiences when you travel, it 
+                        offers you harmony and peace and you 
+                        can enjoy it with great comfort.
+                     </p>
+                  </div>
+
+                  <div class="explore__user">
+                     <img src="assets/img/profile.jpg" alt="explore image" class="explore__perfil">
+                     <span class="explore__name">
+                        Tracy Mae C. Villamor
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </section>
+         
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join__container container grid">
+               <div class="join__data">
+                  <h2 class="section__title">
+                     Your Journey <br>
+                     Starts Here
+                  </h2>
+
+                  <p class="join__description">
+                     Get up to date with the latest 
+                     travel and information from us.
+                  </p>
+
+                  <form action="" class="join__form">
+                     <input type="email" placeholder="Enter your email" class="join__input">
+
+                     <button class="join__button button">
+                        Subscribe Our Newsletter <i class="ri-arrow-right-line"></i>
+                     </button>
+                  </form>
+               </div>
+
+               <div class="join__image">
+                  <img src="assets/img/join-island.jpg" alt="join image" class="join__img">
+                  <div class="join__shadow"></div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <div>
+                  <a href="#" class="footer__logo">Cyane</a>
+
+                  <p class="footer__description">
+                     Travel with us and explore <br> 
+                     the world without limits.
+                  </p>
+               </div>
+
+               <div class="footer__data grid">
+                  <div>
+                     <h3 class="footer__title">About</h3>
+
+                     <ul class="footer__links">
+                        <li>
+                           <a href="#" class="footer__link">About Us</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Features</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">News & Blog</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h3 class="footer__title">Company</h3>
+
+                     <ul class="footer__links">
+                        <li>
+                           <a href="#" class="footer__link">FAQs</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">History</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Testimonials</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h3 class="footer__title">Contact</h3>
+
+                     <ul class="footer__links">
+                        <li>
+                           <a href="#" class="footer__link">Call Center</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Support Center</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h3 class="footer__title">Support</h3>
+
+                     <ul class="footer__links">
+                        <li>
+                           <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Terms & Services</a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="footer__link">Payments</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <div class="footer__group">
+               <div class="footer__social">
+                  <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-facebook-line"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://tiktok.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-tiktok-line"></i>
+                  </a>
+
+                  <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+                     <i class="ri-youtube-line"></i>
+                  </a>
+               </div>
+
+               <span class="footer__copy">
+                  &#169; Copyright Zekken. All rights reserved
+               </span>
+            </div>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
